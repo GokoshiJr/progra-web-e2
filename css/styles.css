@@ -1,56 +1,127 @@
-.element-nav {
-  font-size: 1.5rem;
-  color: black;
-}
-header {
-  color: black;
-}
+/* Estilos tasticos */
+
 .sombra1 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* container - grid */
 .container {
   width: 100%;
   max-width: auto;
   margin: 10px auto; /* auto para centrar la pag*/
   display: grid; /* display grid para empezar a trabajar con css grid*/
-  grid-gap: 5px; /* espaciado de 20px entre cada uno de los elementos del container*/
+  grid-gap: 10px; /* espaciado de 20px entre cada uno de los elementos del container*/
   grid-template-columns: repeat(4, 1fr); /* para establecer 3 col*/
   grid-template-rows: repeat(4, auto);
   /* especificar un area */
   grid-template-areas:
     'header    header     header      header'
-    'sidebar   contenido  contenido   contenido'
-    'sidebar   widget-1   widget-2    widget-2'
+    'sidebar   card1      card1       card1'
+    'sidebar   card2      card2       card2'
+    'widget-1   widget-1   widget-2    widget-2'
     'footer    footer     footer      footer';
+}
+
+/*  Header  */
+.container .header {
+  height: 75px;
+  background-color: #eeeeee;
+  color: #222831;
+  grid-area: header;
+}
+
+.nav-text {
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 991px) {
+  .nav-text {
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+
+/* sidebar */
+
+.container .sidebar {
+  grid-column: 3 / 4; /* Empieza en la 3 y termina en la 4 col*/
+  /* background: #393e46; */
+  background: #00adb5;
+  text-align: justify;
+  display: flex; /* Flex box vertical, cuando queremos organizar elementos de forma vertical y horizontal*/
+  align-items: baseline;
+  justify-content: center;
+  /* min-height: 500px; */
+  grid-area: sidebar;
+
+  /* border: 2px solid black; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-style {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical a {
+  display: block;
+  width: 200px;
+  color: #fff;
+  background-color: #00adb5;
+  text-align: center;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.vertical a:hover,
+.vertical a:active {
+  background-color: #067e85;
+  text-decoration: none;
+  color: black;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 20px;
+  padding: 4px;
+  color: black;
+}
+/* Contenido */
+
+.element-nav {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.container .card1 {
+  background-color: #eeeeee;
+  color: black;
+  grid-area: card1;
+}
+.container .card2 {
+  border: 2px solid black;
+  grid-area: card2;
+}
+.container .card3 {
+  border: 2px solid black;
+  grid-area: card3;
 }
 
 .container > div, /* Para acceder a los div del container*/
 .container .header,
-.container .contenido,
+ .card1,
 .container .sidebar,
 .container .footer {
   /* background: white; */
   padding: 5px;
   border-radius: solid;
-}
-.container .header {
-  background: #12203e;
-  color: #ffffff;
-  grid-area: header;
-}
-.container .contenido {
-  grid-area: contenido;
-}
-.container .sidebar {
-  grid-column: 3/4; /* Empieza en la 3 y termina en la 4 col*/
-  background: #faa43d;
-  text-align: justify;
-  display: flex; /* Flex box vertical, cuando queremos organizar elementos de forma vertical y horizontal*/
-  align-items: baseline;
-  justify-content: center;
-  min-height: 500px;
-  grid-area: sidebar;
 }
 
 .container .widget-1,
@@ -65,14 +136,17 @@ header {
 }
 .container .widget-1 {
   grid-area: widget-1;
+  border: 2px solid black;
 }
 
 .container .widget-2 {
   grid-area: widget-2;
+  border: 2px solid black;
 }
 
 .container .footer {
   background: #12203e;
   color: white;
   grid-area: footer;
+  border: 2px solid black;
 }
