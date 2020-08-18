@@ -1,0 +1,107 @@
+* {
+  /* Para todos los elementos de la pag*/
+  padding: 0;
+  margin: 0;
+}
+
+.sombra1 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background: #e9ecf4;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto; /* auto para centrar la pag*/
+  display: grid; /* display grid para empezar a trabajar con css grid*/
+  grid-gap: 20px; /* espaciado de 20px entre cada uno de los elementos del container*/
+  grid-template-columns: repeat(3, 1fr); /* para establecer 3 col*/
+  grid-template-rows: repeat(4, auto);
+  /* especificar un area */
+  grid-template-areas:
+    'header    header     header'
+    'sidebar   contenido  contenido'
+    'sidebar   widget-1   widget-2'
+    'footer    footer     footer';
+}
+
+.container > div, /* Para acceder a los div del container*/
+.container .header,
+.container .contenido,
+.container .sidebar,
+.container .footer {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+.container .header {
+  background: #12203e;
+  color: #ffffff;
+  grid-area: header;
+}
+.container .contenido {
+  grid-area: contenido;
+}
+.container .sidebar {
+  grid-column: 3/4; /* Empieza en la 3 y termina en la 4 col*/
+  background: #faa43d;
+  text-align: justify;
+  display: flex; /* Flex box vertical, cuando queremos organizar elementos de forma vertical y horizontal*/
+  align-items: baseline;
+  justify-content: center;
+  min-height: 100px;
+  grid-area: sidebar;
+}
+
+.container .widget-1,
+.container .widget-2 {
+  background: #55a8fd;
+  color: white;
+  height: 100px; /* Altura */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .widget-1 {
+  grid-area: widget-1;
+}
+
+.container .widget-2 {
+  grid-area: widget-2;
+}
+
+.container .footer {
+  background: #12203e;
+  color: white;
+  grid-area: footer;
+}
+
+/*  Media Queries */
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-areas:
+      'header     header      header'
+      'contenido  contenido   contenido'
+      'sidebar    sidebar     sidebar'
+      'widget-1   widget-1    widget-2'
+      'footer     footer      footer';
+  }
+}
+@media screen and (max-width: 425px) {
+  .container {
+    grid-template-areas:
+      'header     header      header'
+      'contenido  contenido   contenido'
+      'sidebar    sidebar     sidebar'
+      'widget-1   widget-1    widget-1'
+      'widget-2   widget-2    widget-2'
+      'footer     footer      footer';
+  }
+}

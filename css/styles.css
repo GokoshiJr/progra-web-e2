@@ -1,0 +1,78 @@
+.element-nav {
+  font-size: 1.5rem;
+  color: black;
+}
+header {
+  color: black;
+}
+.sombra1 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 100%;
+  max-width: auto;
+  margin: 10px auto; /* auto para centrar la pag*/
+  display: grid; /* display grid para empezar a trabajar con css grid*/
+  grid-gap: 5px; /* espaciado de 20px entre cada uno de los elementos del container*/
+  grid-template-columns: repeat(4, 1fr); /* para establecer 3 col*/
+  grid-template-rows: repeat(4, auto);
+  /* especificar un area */
+  grid-template-areas:
+    'header    header     header      header'
+    'sidebar   contenido  contenido   contenido'
+    'sidebar   widget-1   widget-2    widget-2'
+    'footer    footer     footer      footer';
+}
+
+.container > div, /* Para acceder a los div del container*/
+.container .header,
+.container .contenido,
+.container .sidebar,
+.container .footer {
+  /* background: white; */
+  padding: 5px;
+  border-radius: solid;
+}
+.container .header {
+  background: #12203e;
+  color: #ffffff;
+  grid-area: header;
+}
+.container .contenido {
+  grid-area: contenido;
+}
+.container .sidebar {
+  grid-column: 3/4; /* Empieza en la 3 y termina en la 4 col*/
+  background: #faa43d;
+  text-align: justify;
+  display: flex; /* Flex box vertical, cuando queremos organizar elementos de forma vertical y horizontal*/
+  align-items: baseline;
+  justify-content: center;
+  min-height: 500px;
+  grid-area: sidebar;
+}
+
+.container .widget-1,
+.container .widget-2 {
+  background: #55a8fd;
+  color: white;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .widget-1 {
+  grid-area: widget-1;
+}
+
+.container .widget-2 {
+  grid-area: widget-2;
+}
+
+.container .footer {
+  background: #12203e;
+  color: white;
+  grid-area: footer;
+}
