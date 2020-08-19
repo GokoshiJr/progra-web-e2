@@ -1,33 +1,13 @@
 /* Estilos tasticos */
-
 .sombra1 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* container - grid */
-.container {
-  width: 100%;
-  max-width: auto;
-  margin: 10px auto; /* auto para centrar la pag*/
-  display: grid; /* display grid para empezar a trabajar con css grid*/
-  grid-gap: 10px; /* espaciado de 20px entre cada uno de los elementos del container*/
-  grid-template-columns: repeat(4, 1fr); /* para establecer 3 col*/
-  grid-template-rows: repeat(4, auto);
-  /* especificar un area */
-  grid-template-areas:
-    'header    header     header      header'
-    'sidebar   card1      card1       card1'
-    'sidebar   card2      card2       card2'
-    'widget-1   widget-1   widget-2    widget-2'
-    'footer    footer     footer      footer';
 }
 
 /*  Header  */
 .container .header {
   height: 75px;
-  background-color: #eeeeee;
-  color: #222831;
-  grid-area: header;
+  background-color: #303841;
+  color: #fff;
 }
 
 .nav-text {
@@ -37,17 +17,10 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media (max-width: 991px) {
-  .nav-text {
-    font-size: 25px;
-    padding: 15px;
-  }
-}
-
 /* sidebar */
 
 .container .sidebar {
-  grid-column: 3 / 4; /* Empieza en la 3 y termina en la 4 col*/
+  grid-column: 1 / 2; /* Empieza en la 3 y termina en la 4 col*/
   /* background: #393e46; */
   background: #00adb5;
   text-align: justify;
@@ -55,9 +28,6 @@
   align-items: baseline;
   justify-content: center;
   /* min-height: 500px; */
-  grid-area: sidebar;
-
-  /* border: 2px solid black; */
 }
 
 a {
@@ -100,33 +70,26 @@ a {
   color: black;
 }
 
-.container .card1 {
-  background-color: #eeeeee;
-  color: black;
-  grid-area: card1;
-}
-.container .card2 {
-  border: 2px solid black;
-  grid-area: card2;
-}
+.container .card1,
+.container .card2,
 .container .card3 {
-  border: 2px solid black;
-  grid-area: card3;
+  background-color: #fff;
 }
 
 .container > div, /* Para acceder a los div del container*/
 .container .header,
- .card1,
+.container .card1,
+.container .card2,
 .container .sidebar,
 .container .footer {
   /* background: white; */
   padding: 5px;
-  border-radius: solid;
+  border-radius: 2px;
 }
 
 .container .widget-1,
 .container .widget-2 {
-  background: #55a8fd;
+  background: #00adb5;
   color: white;
   height: 100px;
   text-align: center;
@@ -134,19 +97,25 @@ a {
   align-items: center;
   justify-content: center;
 }
-.container .widget-1 {
-  grid-area: widget-1;
-  border: 2px solid black;
-}
-
-.container .widget-2 {
-  grid-area: widget-2;
-  border: 2px solid black;
-}
 
 .container .footer {
-  background: #12203e;
+  background: #ff5722;
   color: white;
-  grid-area: footer;
-  border: 2px solid black;
+}
+
+.img1,
+.img2 {
+  width: 270px;
+  height: 180px;
+}
+
+.parrafo1 {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: black;
 }

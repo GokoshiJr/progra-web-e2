@@ -1,0 +1,31 @@
+/*  Media Queries */
+
+/* @media screen and (max-width: 991px) {
+  .nav-text {
+    font-size: 25px;
+    padding: 15px;
+  }
+} */
+
+/* @media screen and (max-width: 1000px) {
+  .container {
+    grid-template-areas:
+      'header     header      header'
+      'sidebar    card1       card2'
+      'sidebar    card1       card2'
+      'widget-1   img1        img2'
+      'widget-2       footer      footer';
+  }
+} */
+
+/* @media screen and (max-width: 425px) {
+    .container {
+      grid-template-areas:
+        'header     header      header'
+        'contenido  contenido   contenido'
+        'sidebar    sidebar     sidebar'
+        'widget-1   widget-1    widget-1'
+        'widget-2   widget-2    widget-2'
+        'footer     footer      footer';
+    }
+  } */
