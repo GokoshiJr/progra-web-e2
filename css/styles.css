@@ -40,21 +40,39 @@ a {
   padding: 0;
 }
 
+.horizontal li {
+  font-size: 22px;
+  float: left;
+  padding: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: block;
+}
+
+.horizontal a {
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.horizontal a:hover,
+.horizontal a:active {
+  background-color: #405758;
+  text-decoration: none;
+  color: #fff;
+}
+
 .vertical a {
   display: block;
-  width: 200px;
+  width: 120px;
   color: #fff;
-  background-color: #00adb5;
+  background-color: #98bf21;
   text-align: center;
-  font-size: 20px;
   padding: 4px;
 }
 
 .vertical a:hover,
 .vertical a:active {
-  background-color: #067e85;
-  text-decoration: none;
-  color: black;
+  background-color: #7a991a;
 }
 
 .titulo {
