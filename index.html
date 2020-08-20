@@ -4,39 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/mediaqueries.css" />
     <link rel="stylesheet" href="./css/gridAreas.css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./utils/bootstrap.min.css" />
-
     <title>Evaluacion 2</title>
   </head>
 
   <body>
     <div class="container">
-      <header class="header sombra1">
-        <nav class="horizontal">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Federaci&oacute;n</a></li>
-          <li><a href="#">Historia</a></li>
-          <li><a href="#">Asociaciones</a></li>
-          <li><a href="#">Arbitraje</a></li>
-          <li><a href="#">Calendario</a></li>
-          <li><a href="#">Noticias</a></li>
-        </nav>
+      <!-- header -->
+      <header class="header sombra1" style="display: flex;">
+        <div class="dropdown">
+          <button class="dropbtn">Inicio</button>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Federaci&oacute;n</button>
+          <div class="dropdown-content">
+            <a href="#">Noticias</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Historial</button>
+          <div class="dropdown-content">
+            <a href="#">Noticias</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Calendario</button>
+          <div class="dropdown-content">
+            <a href="#">Noticias</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="dropdown" id="noticias">
+          <button class="dropbtn">Noticias</button>
+          <div class="dropdown-content">
+            <a href="#">Noticias</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
       </header>
 
       <!-- contenido -->
-      <img src="./img/descarga.jpg" class="img1" />
-      <img src="./img/images.png" class="img2" />
-      <img src="./img/images.png" class="img3" />
+      <!-- <img src="./img/descarga.jpg" class="img1" />
+      <img src="./img/images.png" class="img2" /> -->
+      <!-- <img src="./img/images.png" class="img3" />
       <img src="./img/images.png" class="img4" />
       <img src="./img/images.png" class="img5" />
-      <img src="./img/images.png" class="img6" />
+      <img src="./img/images.png" class="img6" /> -->
 
       <article class="card1 parrafo1">
         El Taekwondo es un arte marcial coreano moderno; el cual fue dado a
@@ -54,7 +80,7 @@
         drogadicción, entre otras condiciones que afectan la salud física,
         mental y emocional.
       </article>
-      <article class="card3 parrafo1">
+      <!-- <article class="card3 parrafo1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ullam
         sequi culpa quae suscipit mollitia neque. Voluptates, hic rem.
         Consectetur unde quia delectus id nulla fuga quod facere, animi
@@ -81,7 +107,7 @@
         Consectetur unde quia delectus id nulla fuga quod facere, animi
         temporibus laudantium voluptas architecto nam deleniti cum distinctio
         soluta ad ea repudiandae debitis obcaecati.
-      </article>
+      </article> -->
 
       <aside class="sidebar sombra1">
         <ul class="no-style vertical">
@@ -97,7 +123,6 @@
       </aside>
 
       <div class="widget-1 sombra1">
-        Federaci&oacute;n Venezolana de Taekwondo
         <h3>widget-1</h3>
       </div>
 
@@ -109,13 +134,11 @@
         <h3>FOOTER</h3>
       </footer>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- 
-      <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-      <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-      <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
-    -->
+
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
