@@ -12,53 +12,65 @@
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./utils/bootstrap.min.css" />
-    <title>Evaluacion 2</title>
+    <title>progra-web-e2</title>
   </head>
 
   <body>
     <div class="container">
       <!-- header -->
       <header class="header sombra1" style="display: flex;">
-        <div class="dropdown">
-          <button class="dropbtn">Inicio</button>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Federaci&oacute;n</button>
-          <div class="dropdown-content">
-            <a href="#">Noticias</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <div id="header1">
+          <div class="dropdown">
+            <button class="dropbtn">Inicio</button>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Federaci&oacute;n</button>
+            <div class="dropdown-content">
+              <a href="#">Noticias</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Historial</button>
+            <div class="dropdown-content">
+              <a href="#">Noticias</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Calendario</button>
+            <div class="dropdown-content">
+              <a href="#">Noticias</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <div class="dropdown" id="noticias">
+            <button class="dropbtn">Noticias</button>
+            <div class="dropdown-content">
+              <a href="#">Noticias</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">Historial</button>
-          <div class="dropdown-content">
-            <a href="#">Noticias</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Calendario</button>
-          <div class="dropdown-content">
-            <a href="#">Noticias</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <div class="dropdown" id="noticias">
-          <button class="dropbtn">Noticias</button>
-          <div class="dropdown-content">
-            <a href="#">Noticias</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+        <div id="header2">
+          <div class="dropdown">
+            <button class="dropbtn">Menu Principal</button>
+            <div class="dropdown-content">
+              <a href="#">Noticias</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
         </div>
       </header>
 
       <!-- contenido -->
-      <!-- <img src="./img/descarga.jpg" class="img1" />
-      <img src="./img/images.png" class="img2" /> -->
+      <img src="./img/descarga.jpg" class="img1 sombra1" />
+      <img src="./img/images.png" class="img2 sombra1" />
       <!-- <img src="./img/images.png" class="img3" />
       <img src="./img/images.png" class="img4" />
       <img src="./img/images.png" class="img5" />
@@ -115,10 +127,32 @@
             src="./img/feve-tkd-logo-1-300x110.png"
             style="height: 90px; width: 200px; padding: 10px;"
           />
-          <li><a href="#">Gokoshi Jr</a></li>
-          <li><a href="#">README</a></li>
-          <li><a href="#">Package.json</a></li>
-          <li><a href="#">Codigo</a></li>
+          <li><a href="https://github.com/GokoshiJr">Gokoshi Jr</a></li>
+          <li>
+            <a href="https://github.com/GokoshiJr/progra-web-e2">Repositorio</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/GokoshiJr/progra-web-e2/blob/master/package.json"
+              >Package.json</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/GokoshiJr/progra-web-e2/releases"
+              >Releases</a
+            >
+          </li>
+        </ul>
+        <ul class="no-style horizontal">
+          <li><a href="https://github.com/GokoshiJr">Gokoshi Jr</a></li>
+          <li>
+            <a href="https://github.com/GokoshiJr/progra-web-e2">Repositorio</a>
+          </li>
+          <li>
+            <a href="https://github.com/GokoshiJr/progra-web-e2/releases"
+              >Releases</a
+            >
+          </li>
         </ul>
       </aside>
 
@@ -134,11 +168,5 @@
         <h3>FOOTER</h3>
       </footer>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>

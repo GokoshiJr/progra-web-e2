@@ -44,28 +44,36 @@ a {
 .horizontal a {
   color: #fff;
   text-align: center;
-  margin: 15px;
+  /* margin: 15px; */
+  margin: auto;
+  padding: 10px;
+  background-color: #00adb5;
 }
 
 .horizontal a:hover,
 .horizontal a:active {
-  background-color: #405758;
+  background-color: #019199;
   text-decoration: none;
   color: #000;
 }
 
 .vertical a {
   display: block;
-  width: 120px;
+  /* width: 120px; */
   color: #fff;
-  background-color: #98bf21;
+  background-color: #00adb5;
   text-align: center;
-  padding: 4px;
+  margin: auto;
+  padding: 10px;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .vertical a:hover,
 .vertical a:active {
-  background-color: #7a991a;
+  background-color: #019199;
+  color: #000000;
+  text-decoration: none;
 }
 
 /* Contenido */
@@ -76,13 +84,12 @@ a {
   background-color: #fff;
 }
 
-.container > div, /* Para acceder a los div del container*/
+.container > div,
 .container .header,
 .container .card1,
 .container .card2,
 .container .sidebar,
 .container .footer {
-  /* background: white; */
   padding: 5px;
   border-radius: 2px;
 }
@@ -106,16 +113,20 @@ a {
 
 .img1,
 .img2 {
-  max-width: 100%;
+  margin: auto;
+  padding: 10%;
+  /* max-width: 100%;
   max-height: 100%;
   min-width: 100px;
-  min-height: 100px;
+  min-height: 100px; */
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
 }
 
-.img1 {
+/* .img1 {
   display: none;
-}
+} */
 
 /* .dropdown {
   display: none;
@@ -169,7 +180,7 @@ a {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #f1f1f18a;
+  background-color: #8579798a;
   text-decoration: none;
   font-size: 18px;
   color: #174274;
@@ -183,4 +194,9 @@ a {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   color: #000;
+}
+
+.horizontal,
+#header2 {
+  display: none;
 }

@@ -8,12 +8,19 @@
     grid-template-columns: repeat(3, 1fr); /* para establecer 3 col*/
     grid-template-rows: repeat(6, auto);
     grid-template-areas:
-      'header     header      header'
-      'card1      card1       card1'
-      'card2     card2       card2'
-      'sidebar   sidebar    sidebar'
-      'widget-1   widget-1 widget-2'
-      'footer   footer      footer';
+      'header      header      header'
+      'img1       card1       card1'
+      'img2       card2       card2'
+      'sidebar     sidebar     sidebar'
+      'widget-1    widget-1    widget-2'
+      'footer      footer      footer';
+  }
+  .vertical,
+  #header2 {
+    display: none;
+  }
+  .horizontal {
+    display: initial;
   }
 }
 
@@ -28,14 +35,28 @@
     grid-template-rows: repeat(7, auto);
     grid-template-areas:
       'header      header'
-      'card1      card1  '
-      'card2     card2   '
-      'sidebar   sidebar '
+      'card1       card1'
+      'card2       card2'
+      'sidebar     sidebar'
       'widget-1    widget-1'
       'widget-2    widget-2'
-      'footer   footer ';
+      'footer      footer';
   }
-  #noticias {
+  #noticias,
+  #header1,
+  .img1,
+  .img2 {
     display: none;
+  }
+  .vertical {
+    display: none;
+  }
+  .horizontal,
+  #header2 {
+    display: initial;
+  }
+
+  #header2 {
+    margin: auto;
   }
 }
