@@ -1,16 +1,12 @@
-/* Estilos tasticos */
 .sombra1 {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-/*  Header  */
 .container .header {
   height: 70px;
   background-color: #303841;
   color: #fff;
 }
-
-/* sidebar */
 
 .container .sidebar {
   grid-column: 1 / 2; /* Empieza en la 3 y termina en la 4 col*/
@@ -95,10 +91,11 @@ a {
 }
 
 .container .widget-1,
-.container .widget-2 {
-  background: #00adb5;
-  color: white;
-  height: 100px;
+.container .widget-2,
+.container .widget-3 {
+  /* background: #00adb5; */
+  color: #000;
+  /* height: 100px; */
 
   text-align: center;
   display: flex;
@@ -121,16 +118,16 @@ a {
   min-height: 100px; */
   width: 100%;
   height: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
-/* .img1 {
-  display: none;
-} */
+.img3,
+.img4 {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
 
-/* .dropdown {
-  display: none;
-} */
 .parrafo1 {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
@@ -139,6 +136,15 @@ a {
   text-indent: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  color: black;
+}
+
+.parrafo2 {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-indent: 20px;
   color: black;
 }
 
@@ -165,7 +171,7 @@ a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -180,9 +186,8 @@ a {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #8579798a;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   color: #174274;
 }
 

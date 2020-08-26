@@ -12,7 +12,7 @@
       'img1       card1       card1'
       'img2       card2       card2'
       'sidebar     sidebar     sidebar'
-      'widget-1    widget-1    widget-2'
+      'widget-1    widget-2    widget-2'
       'footer      footer      footer';
   }
   .vertical,
@@ -21,6 +21,9 @@
   }
   .horizontal {
     display: initial;
+  }
+  .container .widget-3 {
+    display: none;
   }
 }
 
@@ -54,9 +57,12 @@
   .horizontal,
   #header2 {
     display: initial;
-  }
-
-  #header2 {
     margin: auto;
+  }
+  .horizontal li {
+    font-size: 18px;
+  }
+  .container .widget-3 {
+    display: none;
   }
 }
