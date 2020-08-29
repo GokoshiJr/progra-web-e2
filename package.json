@@ -10,7 +10,7 @@
     "html",
     "css"
   ],
-  "author": "Julio Gonzalez",
+  "author": "Julio Gonzalez <julioagonzalez18@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.3.1",

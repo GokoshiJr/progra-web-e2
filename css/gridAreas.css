@@ -73,14 +73,13 @@
 
 /* estructura grid */
 .container {
-  min-width: 1080px;
+  min-width: 1080px; /* ancho minimo */
   margin: 10px auto; /* auto para centrar la pag*/
   display: grid; /* display grid para empezar a trabajar con css grid*/
-  grid-gap: 10px; /* espaciado de 20px entre cada uno de los elementos del container*/
-  grid-template-columns: repeat(4, 1fr); /* para establecer 3 col*/
+  grid-gap: 10px; /* espaciado de 10px entre cada uno de los elementos del container*/
+  grid-template-columns: repeat(4, 1fr); /* 3 col, ancho 1 fr*/
   grid-template-rows: repeat(7, auto);
-  /* especificar un area */
-  grid-template-areas:
+  grid-template-areas: /* especificar un area */
     'header    header     header     header'
     'sidebar   img1       card1      card1'
     'sidebar   card2      card2      img2'
