@@ -2,77 +2,50 @@
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+.container .card1 {
+  grid-area: card1;
+}
+
+.container .card2 {
+  grid-area: card2;
+}
+
+.container .widget-1 {
+  grid-area: widget-1;
+}
+
+.container .widget-2 {
+  grid-area: widget-2;
+}
+
+.container .widget-3 {
+  grid-area: widget-3;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
 .container .header {
   height: 70px;
   background-color: #303841;
   color: #fff;
+  grid-area: header;
 }
 
 .container .sidebar {
   grid-column: 1 / 2; /* Empieza en la 3 y termina en la 4 col*/
-  /* background: #393e46; */
   background: #00adb5;
   text-align: justify;
   display: flex; /* Flex box vertical, cuando queremos organizar elementos de forma vertical y horizontal*/
   align-items: baseline;
   justify-content: center;
-  /* min-height: 500px; */
+  grid-area: sidebar;
 }
-
-a {
-  text-decoration: none;
-}
-
-.no-style {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.horizontal li {
-  font-size: 22px;
-  float: left;
-  padding: 15px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  display: block;
-}
-
-.horizontal a {
-  color: #fff;
-  text-align: center;
-  /* margin: 15px; */
-  margin: auto;
-  padding: 10px;
-  background-color: #00adb5;
-}
-
-.horizontal a:hover,
-.horizontal a:active {
-  background-color: #019199;
-  text-decoration: none;
-  color: #000;
-}
-
-.vertical a {
-  display: block;
-  /* width: 120px; */
-  color: #fff;
-  background-color: #00adb5;
-  text-align: center;
-  margin: auto;
-  padding: 10px;
-  font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.vertical a:hover,
-.vertical a:active {
-  background-color: #019199;
-  color: #000000;
-  text-decoration: none;
-}
-
-/* Contenido */
 
 .container .card1,
 .container .card2,
@@ -90,42 +63,27 @@ a {
   border-radius: 2px;
 }
 
-.container .widget-1,
-.container .widget-2,
-.container .widget-3 {
-  /* background: #00adb5; */
-  color: #000;
-  /* height: 100px; */
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container .footer {
   background: #ff5722;
   color: white;
+  grid-area: footer;
 }
 
 .img1,
 .img2 {
-  margin: auto;
-  padding: 10%;
-  /* max-width: 100%;
-  max-height: 100%;
-  min-width: 100px;
-  min-height: 100px; */
   width: 100%;
   height: 100%;
+  margin: auto;
+  padding: 10%;
   border: 2px solid black;
 }
 
 .img3,
 .img4 {
-  padding: 5px;
-  margin: auto;
   width: 100%;
   height: 100%;
+  margin: auto;
+  padding: 5px;
 }
 
 .parrafo1 {
@@ -149,59 +107,6 @@ a {
   padding: 10px;
 }
 
-/* Style The Dropdown Button */
-.dropbtn {
-  /* background-color: #4caf50; */
-  background-color: #303841;
-  color: white;
-  margin: 12px;
-  padding: 2px;
-  font-size: 22px;
-  border: none;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 180px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  text-decoration: none;
-  font-size: 17px;
-  color: #174274;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  color: #000;
-}
-
 .horizontal,
 #header2 {
   display: none;
@@ -211,29 +116,4 @@ a {
   min-height: 300px;
   height: 100%;
   width: 100%;
-}
-
-.vertical-footer a {
-  text-decoration: none;
-  color: #fff;
-  text-align: left;
-  font-size: 16px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.vertical-footer li {
-  text-decoration: none;
-  color: #fff;
-  margin: 10px;
-  width: 120px;
-  text-align: left;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.vertical-footer a:hover,
-.vertical-footer a:active {
-  background-color: #ff5723;
-  color: #000000;
-  text-decoration: none;
 }
