@@ -1,6 +1,6 @@
 # progra-web-e2
 
-Repository of the evaluation two, web programming, only html and css are used.
+Repository of the evaluation two, web programming, only html and css are used. To see the website click here **[progra-web-e2](https://goko-progra-web-e2.000webhostapp.com/)**.
 
 ## Install
 
@@ -20,6 +20,10 @@ progra-web-e2 is released under the [MIT License](https://opensource.org/license
 
 - *[W3Schools](https://www.w3schools.com/css/default.asp).* 
 - *[Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/).*
+
+## Host
+
+Has been deployed with the free host **[000webhost](https://www.000webhost.com/).**
 
 ## Author
 
