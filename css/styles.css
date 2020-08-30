@@ -11,6 +11,8 @@
 }
 
 .container .widget-1 {
+  justify-content: center;
+  align-items: flex-start;
   grid-area: widget-1;
 }
 
@@ -19,6 +21,8 @@
 }
 
 .container .widget-3 {
+  justify-content: center;
+  align-items: flex-start;
   grid-area: widget-3;
 }
 
@@ -48,8 +52,7 @@
 }
 
 .container .card1,
-.container .card2,
-.container .card3 {
+.container .card2 {
   background-color: #fff;
 }
 
@@ -116,4 +119,19 @@
   min-height: 300px;
   height: 100%;
   width: 100%;
+}
+
+header {
+  display: flex;
+}
+
+#logo {
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+#derechos {
+  text-align: center;
+  margin: 10px;
 }

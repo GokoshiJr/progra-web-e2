@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./utils/bootstrap.min.css" />
     <title>Club de Tae Kwon Do Valle de San diego</title>
   </head>
-
   <body>
     <div class="container">
       <!-- header -->
-      <header class="header sombra1" style="display: flex;">        
+      <header class="header sombra1">   
+        <!-- header1 -->     
         <div id="header1">
           <div class="dropdown">            
             <button class="dropbtn">Inicio</button>
@@ -64,6 +64,7 @@
             </div>
           </div>
         </div>
+        <!-- header2 - small size -->
         <div id="header2">
           <div class="dropdown">
             <button class="dropbtn">Menu Principal</button>
@@ -96,13 +97,15 @@
         drogadicción, entre otras condiciones que afectan la salud física,
         mental y emocional.
       </article>
+
+      <!-- aside -->
       <aside class="sidebar sombra1">
         <!-- aside vertical -->
         <ul class="no-style vertical">
           <img
-            src="./img/logotaek.JPG"
-            style="height: 200px; width: 200px; margin:10px"
+            src="./img/logotaek.JPG"            
             class="sombra1"
+            id="logo"
           />
           <li><a href="#">Academia</a></li>
           <li>
@@ -134,61 +137,60 @@
         </ul>
       </aside>
 
-      <div class="widget-1 sombra1" style="justify-content: center;
-      align-items: flex-start;">
+      <!-- widget-1 -->
+      <div class="widget-1 sombra1">
         <div>
-          <img src="./img/seguridad.jpg" class="img3" alt="...">
-          
+          <img src="./img/seguridad.jpg" class="img3" alt="Medidas de seguridad">          
             <p class="parrafo2">El retorno a la actividad deportiva en Venezuela presenta un panorama difícil producto de la actual situación sanitaria, por lo tanto hay que cumplir las reglas de distanciamiento social.</p>
         </div>               
       </div>
-      <!-- Video -->
+      <!-- widget-2 video -->
       <div class="widget-2 sombra1"> 
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLYHueCzwsnoSCg13kEADj83JD2RDas230" id="video1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <div class="widget-3 sombra1" style="justify-content: center;
-      align-items: flex-start;">        
+      <!-- widget-3 -->
+      <div class="widget-3 sombra1">        
         <div>
           <img src="./img/images.jpg" class="img4" alt="...">           
             <p class="parrafo2">El taekwondo se caracteriza por su amplio uso de las técnicas de pierna y patadas, que son mucho más variadas y tienen mayor protagonismo que en la mayoría de las artes marciales, y deportes de combate..</p>
         </div>
       </div>
+      
+      <!-- footer -->
       <footer class="footer sombra1">
         <div class="row">
-        <ul class="no-style vertical-footer col-lg-2 col-md-2 col-sm-auto" >
-          <li><a href="#">Academia</a></li>
-          <li>
-            <a href="#">Inscripciones</a>
-          </li>
-          <li>
-            <a href="#"
-              >Competencias</a
-            >
-          </li>
-        </ul>
-        <ul class="no-style vertical-footer col-lg-2 col-md-2 col-sm-auto" >
-          <li><a href="#">Instagram</a></li>
-          <li>
-            <a href="#">Facebook</a>
-          </li>
-          <li>
-            <a href="#"
-              >Twitter</a
-            >
-          </li>
-        </ul>
-        <ul class="no-style vertical-footer col-lg-2 col-md-2 col-sm-auto" >
-          <li><a href="#">Gokoshi Jr</a></li>
-          <li>
-            <a href="#">Repositorio</a>
-          </li>          
-        </ul>
-        <div class="col-lg-4 col-md-4 col-sm-auto" style="text-align: center; margin: 10px;" id="derechos">
-          <p>Club de Taekwon-do Valle de San Diego, Todos los derechos reservados.</p>
+          <ul class="no-style vertical-footer col-lg-2 col-md-2 col-sm-auto" >
+            <li><a href="#">Academia</a></li>
+            <li>
+              <a href="#">Inscripciones</a>
+            </li>
+            <li>
+              <a href="#"
+                >Competencias</a
+              >
+            </li>
+          </ul>
+          <ul class="no-style vertical-footer col-lg-2 col-md-2 col-sm-auto" >
+            <li><a href="#">Instagram</a></li>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+          <ul class="no-style vertical-footer col-lg-2 col-md-2 col-sm-auto" >
+            <li><a href="https://github.com/GokoshiJr">Gokoshi Jr</a></li>
+            <li>
+              <a href="https://github.com/GokoshiJr/progra-web-e2">Repositorio</a>
+            </li>          
+          </ul>
+          <div class="col-lg-4 col-md-4 col-sm-auto" id="derechos">
+            <p>Club de Taekwon-do Valle de San Diego, Todos los derechos reservados.</p>
+          </div>        
         </div>
-        
-      </div>  
-        
       </footer>
     </div>
   </body>

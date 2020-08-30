@@ -57,10 +57,7 @@
   #noticias,
   #header1,
   .img1,
-  .img2 {
-    display: none;
-  }
-
+  .img2,
   .vertical {
     display: none;
   }
