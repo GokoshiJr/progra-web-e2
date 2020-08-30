@@ -1,6 +1,7 @@
 # progra-web-e2
 
-Repository of the evaluation two, web programming, only html and css are used. To see the website click here **[progra-web-e2](https://goko-progra-web-e2.000webhostapp.com/)**.
+Repository of the evaluation two, web programming, only html and css are used.<br/> 
+**To see the website click here [progra-web-e2](https://e2-progra-web.000webhostapp.com/)**.
 
 ## Install
 
